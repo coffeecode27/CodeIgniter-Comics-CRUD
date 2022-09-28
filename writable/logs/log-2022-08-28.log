@@ -1,0 +1,64 @@
+CRITICAL - 2022-08-28 12:04:33 --> Invalid file: pages/contact.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1137): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Pages.php(34): view()
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Pages->contact()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-28 12:16:03 --> Undefined index: kota
+in APPPATH/Views/pages/contact.php on line 16.
+ 1 APPPATH/Views/pages/contact.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/contact.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1137): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Pages.php(48): view()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Pages->contact()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+ERROR - 2022-08-28 14:43:29 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 /opt/lampp/htdocs/ci4app/app/Controllers/Komik.php(16): CodeIgniter\Database\BaseConnection->query()
+#4 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Komik->index()
+#5 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#6 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#7 /opt/lampp/htdocs/ci4app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#8 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/opt/lampp/htdo...')
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 /opt/lampp/htdocs/ci4app/app/Controllers/Komik.php(16): CodeIgniter\Database\BaseConnection->query()
+#3 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Komik->index()
+#4 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+#5 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#6 /opt/lampp/htdocs/ci4app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#7 /opt/lampp/htdocs/ci4app/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/opt/lampp/htdo...')
+#8 {main}
+CRITICAL - 2022-08-28 14:43:29 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/Komik.php(16): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Komik->index()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-08-28 15:00:44 --> Undefined variable: komikModel
+in APPPATH/Controllers/Komik.php on line 13.
+ 1 APPPATH/Controllers/Komik.php(13): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(866): App\Controllers\Komik->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
